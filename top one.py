@@ -17,8 +17,8 @@ def top(arr):
         else:
             continue
 
-    return result
+    return result, values
 
 
 
-print(top([4,1,2,3,2,3,2,]))
+print(top([4,1,2,3,2,3,2,4,4,4,2]))
