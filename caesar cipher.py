@@ -21,3 +21,21 @@ def decrypt(string, key):
     return encrypt(string, key)
 
 print(decrypt('leqihd', 4))
+
+
+def brute_force(string):
+    alpha = ascii_letters
+    key = 1
+    result =''
+    brute_force_date = {}
+
+
+    while key <= len(alpha):
+        result = decrypt(string,key)
+        brute_force_date[key]= result
+        result=''
+        key += 1
+    return brute_force_date
+
+
+print(brute_force('eqmv'))
